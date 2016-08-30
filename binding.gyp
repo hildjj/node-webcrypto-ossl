@@ -55,21 +55,21 @@
                                 "target_arch=='x64'",
                                 {
                                     "variables": {
-                                        "openssl_root%": "C:/github/openssl"
+                                        "openssl_root%": "C:/OpenSSL-Win64"
                                     }
                                 },
                                 {
                                     "variables": {
-                                        "openssl_root%": "C:/github/openssl"
+                                        "openssl_root%": "C:/OpenSSL-Win32"
                                     }
                                 }
                             ]
                         ],
                         "libraries": [
-                            "-l<(openssl_root)/out32dll/libeay32.lib"
+                            "-l<(openssl_root)/lib/libeay32.lib"
                         ],
                         "include_dirs": [
-                            "<(openssl_root)/inc32"
+                            "<(openssl_root)/include"
                         ]
                     },
                     {
